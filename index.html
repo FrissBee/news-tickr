@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News TickR</title>
+    <link href="https://frissbee.de/images/logos/FrissBee-Logo_01.png" rel="icon" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <!-- Insert the "news-tickr_1.0.0.js" file -->
+    <script src="./assets/js/news-tickr_1.0.0.js" defer></script>
+
+    <style></style>
+  </head>
+  <body>
+    <main>
+      <div class="bg-light border-bottom">
+        <div class="container py-4">
+          <h3 style="padding-top: 80px">News TickR</h3>
+          <div>
+            Download and documentation on <a href="https://github.com/FrissBee/news-tickr" target="_blank" rel="noopener noreferrer">GitHub</a><br />
+            Created by <a href="https://frissbee.de/" target="_blank" rel="noopener noreferrer">FrissBee.de</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-5">
+        <h3 class="mb-5">Horizontal</h3>
+
+        <p><b>1. Example - default</b></p>
+        <news-tickr-h>
+          <div>1. Item</div>
+          <div>2. Item</div>
+          <div>3. Item</div>
+        </news-tickr-h>
+        <hr />
+
+        <p><b>2. Example</b></p>
+        <news-tickr-h animation-time="10" item-padding="0 120px">
+          <div>1. Item</div>
+          <div>2. Item</div>
+          <div>3. Item</div>
+        </news-tickr-h>
+        <hr />
+
+        <p><b>3. Example</b></p>
+        <news-tickr-h animation-time="30" bg-color="#f2f2f2" item-padding="20px 40px" border-color="2px solid #e0e0e0" border-radius="8px">
+          <div><span style="color: rgb(150, 25, 25)">1. Item</span></div>
+          <div><span style="color: rgb(18, 133, 18)">2. Item</span></div>
+          <div><span style="color: rgb(30, 102, 161)">3. Item</span></div>
+        </news-tickr-h>
+        <hr />
+
+        <p><b>4. Example</b></p>
+        <p>See the first news ticker on the top</p>
+        <news-tickr-h bg-color="#303030" item-padding="8px 40px 8px" is-top="0px" is-fixed>
+          <div><span style="color: rgb(248, 248, 248)">1. Item</span></div>
+          <div><span style="color: rgb(248, 248, 248)">2. Item</span></div>
+          <div><span style="color: rgb(248, 248, 248)">3. Item</span></div>
+        </news-tickr-h>
+        <hr />
+
+        <p><b>5. Example</b></p>
+        <p>See the second news ticker on the bottom</p>
+        <news-tickr-h bg-color="#e6df22" item-padding="10px" is-bottom="0px" is-fixed>
+          <div><span style="color: rgb(0, 0, 0)">1. Item</span><img src="./images/heart.png" alt="" style="height: 20px; width: auto; margin-left: 10px" /></div>
+          <div><span style="color: rgb(18, 84, 104)">2. Item</span><img src="./images/sunday.png" alt="" style="height: 20px; width: auto; margin-left: 10px" /></div>
+          <div><span style="color: rgb(128, 18, 18)">3. Item</span><img src="./images/heart.png" alt="" style="height: 20px; width: auto; margin-left: 10px" /></div>
+        </news-tickr-h>
+        <hr />
+
+        <h3 class="my-5">Vertical</h3>
+
+        <p><b>1. Example - default</b></p>
+        <news-tickr-v>
+          <div>1. Item</div>
+          <div>2. Item</div>
+          <div>3. Item</div>
+        </news-tickr-v>
+        <hr />
+
+        <p><b>2. Example</b></p>
+        <news-tickr-v animation-time="8" bg-color="#e8e8e8" ticker-height="60px" item-padding="30px 0" border-color="2px solid #808080" border-radius="8px">
+          <div>1. Item - Lorem...</div>
+          <div>2. Item</div>
+          <div>3. Item - text...</div>
+        </news-tickr-v>
+        <hr />
+
+        <p><b>3. Example</b></p>
+        <news-tickr-v animation-time="6" text-position="left" border-color="1px solid #808080" item-padding="14px 0 14px 20px">
+          <div>1. Item - Lorem...</div>
+          <div>2. Item</div>
+          <div>3. Item - text...</div>
+        </news-tickr-v>
+        <hr />
+
+        <p><b>4. Example</b></p>
+        <p>See the second news ticker on the top</p>
+        <news-tickr-v animation-time="3" bg-color="#e8e8e8" item-padding="8px 0" is-top="40px" is-fixed>
+          <div><span style="color: rgb(0, 0, 0)">1. Item</span><img src="./images/heart.png" alt="" style="height: 20px; width: auto; margin-left: 10px" /></div>
+          <div><span style="color: rgb(18, 84, 104)">2. Item</span><img src="./images/sunday.png" alt="" style="height: 20px; width: auto; margin-left: 10px" /></div>
+          <div><span style="color: rgb(128, 18, 18)">3. Item</span><img src="./images/heart.png" alt="" style="height: 20px; width: auto; margin-left: 10px" /></div>
+        </news-tickr-v>
+        <hr />
+
+        <p><b>5. Example</b></p>
+        <p>See the first news ticker on the bottom</p>
+        <news-tickr-v animation-time="3" bg-color="#1b7ca6" item-padding="8px 0" is-bottom="40px" is-fixed>
+          <div><div style="color: #fff">1. Item</div></div>
+          <div><div style="color: #fff">2. Item</div></div>
+          <div><div style="color: #fff">3. Item</div></div>
+        </news-tickr-v>
+        <hr />
+
+        <div style="height: 300px"></div>
+      </div>
+    </main>
+  </body>
+</html>
