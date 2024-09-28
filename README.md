@@ -18,11 +18,11 @@ Implement the _News TickR_ in your project:
 
 **1. Step - download and add**
 
-Download or clone the repo and add the file `news-tickr_1.0.0.js` into your project.
+Download or clone the repo and add the file `news-tickr_1.1.0.js` into your project.
 
 **2. Step - implementation**
 
-Include the `news-tickr_1.0.0.js` file in the corresponding HTML or PHP file with `<script src="./path-to-the-file/news-tickr_1.0.0.js" defer></script>` in the `<head>`-Tag
+Include the `news-tickr_1.1.0.js` file in the corresponding HTML or PHP file with `<script src="./path-to-the-file/news-tickr_1.1.0.js" defer></script>` in the `<head>`-Tag
 
 **3. Step - insert one of the two news-tickr HTML tags**
 
@@ -64,8 +64,8 @@ Use the attributes (see below) to customize the _News TickR_.
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Typing Text</title>
 
-    <!-- 1. Insert the "news-tickr_1.0.0.js" file -->
-    <script src="./path-to-the-file/news-tickr_1.0.0.js" defer></script>
+    <!-- 1. Insert the "news-tickr_1.1.0.js" file -->
+    <script src="./path-to-the-file/news-tickr_1.1.0.js" defer></script>
   </head>
   <body>
     <main>
@@ -192,3 +192,36 @@ Use the attributes (see below) to customize the _News TickR_.
   This attribute is used to specify the position at which the text lines are specified.
 
   There are: `center` (default), `left` and `right`.
+
+- `pause-line`
+
+  If this attribute is set, the text line pauses when it is in the middle.
+
+  A value does not have to be specified.
+
+  **Note:** If the attribute `item-padding` is used, the value for `top` and `bottom` should be set to `0`, otherwise the text line will not pause correctly in the middle due to the additional spacing.
+
+  Example:
+
+  incorrect: `item-padding="10px 40px 12px 44px"`
+
+  correct: `item-padding="0 40px 0 44px"`
+
+## Design with CSS
+
+If you want to have more influence on the design, you can do this in your CSS file with the pseudo-element `::part()`.
+
+You can design:
+
+- `tickr-container-h`
+- `trickr-wrapper-h`
+- `tickr-container-v`
+- `trickr-wrapper-v`
+
+Here a simple example:
+
+```css
+news-tickr-v::part(tickr-container-v) {
+  border-bottom: 1px solid #ad3d3d;
+}
+```

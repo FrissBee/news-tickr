@@ -12,10 +12,8 @@
       crossorigin="anonymous"
     />
 
-    <!-- Insert the "news-tickr_1.0.0.js" file -->
-    <script src="./assets/js/news-tickr_1.0.0.js" defer></script>
-
-    <style></style>
+    <!-- Insert the "news-tickr_1.1.0.js" file -->
+    <script src="./assets/js/news-tickr_1.1.0.js" defer></script>
   </head>
   <body>
     <main>
@@ -49,10 +47,10 @@
         <hr />
 
         <p><b>3. Example</b></p>
-        <news-tickr-h animation-time="30" bg-color="#f2f2f2" item-padding="20px 40px" border-color="2px solid #e0e0e0" border-radius="8px">
-          <div><span style="color: rgb(150, 25, 25)">1. Item</span></div>
-          <div><span style="color: rgb(18, 133, 18)">2. Item</span></div>
-          <div><span style="color: rgb(30, 102, 161)">3. Item</span></div>
+        <news-tickr-h class="demo-3-h" animation-time="30" bg-color="#f2f2f2" item-padding="20px 40px" border-color="2px solid #e0e0e0" border-radius="8px">
+          <div><span style="color: rgb(150, 25, 25); font-size: 28px; font-weight: bold">1. Item</span></div>
+          <div><span style="color: rgb(18, 133, 18); font-size: 28px; font-weight: bold">2. Item</span></div>
+          <div><span style="color: rgb(30, 102, 161); font-size: 28px; font-weight: bold">3. Item</span></div>
         </news-tickr-h>
         <hr />
 
@@ -115,6 +113,15 @@
           <div><div style="color: #fff">1. Item</div></div>
           <div><div style="color: #fff">2. Item</div></div>
           <div><div style="color: #fff">3. Item</div></div>
+        </news-tickr-v>
+        <hr />
+
+        <p><b>6. Example - with pause line</b></p>
+        <news-tickr-v animation-time="10" text-position="left" bg-color="#a12424" border-color="1px solid #808080" item-padding="0 0 0 40px" ticker-height="80px" pause-line>
+          <div><span style="font-size: 20px; color: #fff">1. Item - Lorem...</span></div>
+          <div><span style="font-size: 20px; color: #fff">2. Item</span></div>
+          <div><span style="font-size: 20px; color: #fff">3. Item - text...</span></div>
+          <div><span style="font-size: 20px; color: #fff">4. Item - Lorem...</span></div>
         </news-tickr-v>
         <hr />
 
