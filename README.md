@@ -18,11 +18,11 @@ Implement the _News TickR_ in your project:
 
 **1. Step - download and add**
 
-Download or clone the repo and add the file `news-tickr_1.1.0.js` into your project.
+Download or clone the repo and add the file `news-tickr_1.1.1.js` into your project.
 
 **2. Step - implementation**
 
-Include the `news-tickr_1.1.0.js` file in the corresponding HTML or PHP file with `<script src="./path-to-the-file/news-tickr_1.1.0.js" defer></script>` in the `<head>`-Tag
+Include the `news-tickr_1.1.1.js` file in the corresponding HTML or PHP file with `<script src="./path-to-the-file/news-tickr_1.1.1.js" defer></script>` in the `<head>`-Tag
 
 **3. Step - insert one of the two news-tickr HTML tags**
 
@@ -64,8 +64,8 @@ Use the attributes (see below) to customize the _News TickR_.
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Typing Text</title>
 
-    <!-- 1. Insert the "news-tickr_1.1.0.js" file -->
-    <script src="./path-to-the-file/news-tickr_1.1.0.js" defer></script>
+    <!-- 1. Insert the "news-tickr_1.1.1.js" file -->
+    <script src="./path-to-the-file/news-tickr_1.1.1.js" defer></script>
   </head>
   <body>
     <main>
