@@ -12,8 +12,8 @@
       crossorigin="anonymous"
     />
 
-    <!-- Insert the "news-tickr_1.1.1.js" file -->
-    <script src="./assets/js/news-tickr_1.1.1.js" defer></script>
+    <!-- Insert the "news-tickr_1.2.0.js" file -->
+    <script src="./assets/js/news-tickr_1.2.0.js" defer></script>
   </head>
   <body>
     <main>
@@ -39,7 +39,7 @@
         <hr />
 
         <p><b>2. Example</b></p>
-        <news-tickr-h animation-time="10" item-padding="0 120px">
+        <news-tickr-h animation-time="10" item-padding="8px 120px" border-color="1px solid #e0e0e0">
           <div>1. Item</div>
           <div>2. Item</div>
           <div>3. Item</div>
@@ -69,6 +69,14 @@
           <div><span style="color: rgb(0, 0, 0)">1. Item</span><img src="./images/heart.png" alt="" style="height: 20px; width: auto; margin-left: 10px" /></div>
           <div><span style="color: rgb(18, 84, 104)">2. Item</span><img src="./images/sunday.png" alt="" style="height: 20px; width: auto; margin-left: 10px" /></div>
           <div><span style="color: rgb(128, 18, 18)">3. Item</span><img src="./images/heart.png" alt="" style="height: 20px; width: auto; margin-left: 10px" /></div>
+        </news-tickr-h>
+        <hr />
+
+        <p><b>6. Example - with close button</b></p>
+        <news-tickr-h animation-time="6" bg-color="#303030" item-padding="18px 40px" is-close-btn color-close-btn="#e7e7e7" bg-close-btn="#b31f1f">
+          <div><span style="color: rgb(248, 248, 248)">1. Item</span></div>
+          <div><span style="color: rgb(248, 248, 248)">2. Item</span></div>
+          <div><span style="color: rgb(248, 248, 248)">3. Item</span></div>
         </news-tickr-h>
         <hr />
 
@@ -107,9 +115,9 @@
         </news-tickr-v>
         <hr />
 
-        <p><b>5. Example</b></p>
+        <p><b>5. Example - fixed bottom - with close button</b></p>
         <p>See the first news ticker on the bottom</p>
-        <news-tickr-v animation-time="3" bg-color="#1b7ca6" item-padding="8px 0" is-bottom="40px" is-fixed>
+        <news-tickr-v animation-time="3" bg-color="#1b7ca6" item-padding="8px 0" is-bottom="40px" is-fixed is-close-btn color-close-btn="#ebebeb" bg-close-btn="transparent">
           <div><div style="color: #fff">1. Item</div></div>
           <div><div style="color: #fff">2. Item</div></div>
           <div><div style="color: #fff">3. Item</div></div>

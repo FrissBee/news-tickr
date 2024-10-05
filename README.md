@@ -18,11 +18,11 @@ Implement the _News TickR_ in your project:
 
 **1. Step - download and add**
 
-Download or clone the repo and add the file `news-tickr_1.1.1.js` into your project.
+Download or clone the repo and add the file `news-tickr_1.2.0.js` into your project.
 
 **2. Step - implementation**
 
-Include the `news-tickr_1.1.1.js` file in the corresponding HTML or PHP file with `<script src="./path-to-the-file/news-tickr_1.1.1.js" defer></script>` in the `<head>`-Tag
+Include the `news-tickr_1.2.0.js` file in the corresponding HTML or PHP file with `<script src="./path-to-the-file/news-tickr_1.2.0.js" defer></script>` in the `<head>`-Tag
 
 **3. Step - insert one of the two news-tickr HTML tags**
 
@@ -64,18 +64,26 @@ Use the attributes (see below) to customize the _News TickR_.
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Typing Text</title>
 
-    <!-- 1. Insert the "news-tickr_1.1.1.js" file -->
-    <script src="./path-to-the-file/news-tickr_1.1.1.js" defer></script>
+    <!-- 1. Insert the "news-tickr_1.2.0.js" file -->
+    <script src="./path-to-the-file/news-tickr_1.2.0.js" defer></script>
   </head>
   <body>
     <main>
-      <!--2.  Insert the "news-tickr" tag -->
+      <!--2. Insert the "news-tickr" tag -->
       <!-- horizontal: -->
       <news-tickr-h>
         <div>1. Item</div>
         <div><span style="color: rgb(30, 102, 161)">3. Item</span></div>
         <!-- and so on... -->
       </news-tickr-h>
+
+      <!--2. Insert the "news-tickr" tag -->
+      <!-- vertical: -->
+      <news-tickr-c>
+        <div>1. Item</div>
+        <div><span style="color: rgb(30, 102, 161)">3. Item</span></div>
+        <!-- and so on... -->
+      </news-tickr-c>
     </main>
   </body>
 </html>
@@ -132,6 +140,24 @@ Use the attributes (see below) to customize the _News TickR_.
   Spacing of the text line. The specified value is like `padding` from CSS.
 
   Example: `item-padding="10px 120px"`.
+
+- `is-close-btn`
+
+  If this attribute is specified, a close button is displayed at the top right.
+
+  A value does not have to be specified.
+
+- `color-close-btn`
+
+  This attribute can be used to specify the color of the Close button.
+
+  Example: `color-close-btn="#e7e7e7"`.
+
+- `bg-close-btn`
+
+  This attribute can be used to specify the background color of the close button.
+
+  Example: `bg-close-btn="#b31f1f"`.
 
 #### For vertical
 
@@ -206,6 +232,24 @@ Use the attributes (see below) to customize the _News TickR_.
   incorrect: `item-padding="10px 40px 12px 44px"`
 
   correct: `item-padding="0 40px 0 44px"`
+
+- `is-close-btn`
+
+  If this attribute is specified, a close button is displayed at the top right.
+
+  A value does not have to be specified.
+
+- `color-close-btn`
+
+  This attribute can be used to specify the color of the Close button.
+
+  Example: `color-close-btn="#e7e7e7"`.
+
+- `bg-close-btn`
+
+  This attribute can be used to specify the background color of the close button.
+
+  Example: `bg-close-btn="#b31f1f"`.
 
 ## Design with CSS
 
